@@ -72,7 +72,7 @@ jobs:
           private_key: ${{ secrets.github_app_private_key }}
 
       - name: Release
-        uses: semantic-release-action/rust/semantic-release-library@v5
+        uses: starfy84/semantic-release-action-rust/semantic-release-library@v5-trusted-publishing
         with:
           toolchain: ${{ inputs.toolchain }}
           disable-semantic-release-cargo: ${{ inputs.disable-semantic-release-cargo }}

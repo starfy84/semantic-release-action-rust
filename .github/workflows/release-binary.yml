@@ -434,7 +434,7 @@ jobs:
           private_key: ${{ secrets.github_app_private_key }}
 
       - name: Release
-        uses: semantic-release-action/rust/semantic-release-binary@v5
+        uses: starfy84/semantic-release-action-rust/semantic-release-binary@v5-trusted-publishing
         with:
           toolchain: ${{ inputs.toolchain }}
           compiled-targets: ${{ needs.configure-job-matrix.outputs.compilation-matrix }}
